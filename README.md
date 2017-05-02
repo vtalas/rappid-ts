@@ -10,7 +10,6 @@ Rappid typescript definition
 
 #### Sample App
 
-
 based on the RappidJS [KitchenSink](http://resources.jointjs.com/demos/kitchensink) demo app.
 
 ```
