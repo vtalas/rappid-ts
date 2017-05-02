@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Typescript Rappid Demo Application</title>
+    <link rel="stylesheet" type="text/css" href="../../build/rappid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/theme-picker.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+
+<div id="app" class="joint-app">
+    <div class="app-header">
+        <div class="app-title">
+            <h1>Rappid</h1>
+        </div>
+        <div class="toolbar-container"></div>
+    </div>
+    <div class="app-body">
+        <div class="stencil-container"></div>
+        <div class="paper-container"></div>
+        <div class="inspector-container"></div>
+        <div class="navigator-container"></div>
+    </div>
+</div>
+
+<!--[if IE 9]>
+<script>
+    // `-ms-user-select: none` doesn't work in IE9
+    document.onselectstart = function() {
+        return false;
+    };
+</script>
+<![endif]-->
+
+<!-- Application files:  -->
+<script src="js/config/halo.js"></script>
+<script src="js/config/selection.js"></script>
+<script src="js/config/inspector.js"></script>
+<script src="js/config/stencil.js"></script>
+<script src="js/config/toolbar.js"></script>
+<script src="js/config/sample-graphs.js"></script>
+<script src="build/bundle.js"></script>
+
+<script>
+    joint.setTheme('modern');
+</script>
+
+</body>
+</html>
