@@ -1,0 +1,59 @@
+
+#paper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    box-shadow: 4px 4px 0px lightgray;
+}
+
+#toolbar {
+    margin-bottom: 20px;
+    width: 780px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px lightgray;
+    outline: none;
+}
+#toolbar > div {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#toolbar .joint-select-box:not(.joint-color-palette) .select-box-selection {
+    height: 35px;
+    line-height: 35px;
+    padding: 2px;
+    padding-left: 5px;
+}
+#toolbar .joint-select-box:not(.joint-color-palette) .select-box-option-content {
+    height: 30px;
+    line-height: 30px;
+}
+
+#toolbar .joint-color-palette .select-box-placeholder {
+    line-height: 25px;
+    width: 34px;
+}
+
+.joint-text-editor .caret {
+   background-color: white;
+   width: 2px;
+}
+.joint-free-transform {
+    border: 1px solid #31d0c6;
+}
+.joint-free-transform > .resize,
+.joint-free-transform > .rotate {
+    background-color: #31d0c6;
+    border: 1px solid white;
+}
+.joint-free-transform > .resize:hover,
+.joint-free-transform > .rotate:hover {
+    background-color: #7c68fc;
+}
+.joint-free-transform > .resize {
+    border-radius: 0;
+}

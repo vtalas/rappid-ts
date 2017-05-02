@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Rappid - Demo - ui.Tooltip</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/lib/rappid.min.css">
+    <link rel="stylehseet" type="text/css" href="css/index.css">
+    <style type="text/css">
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 5px;
+        }
+
+        label, input {
+            display: block;
+            margin: 8px;
+            width: 240px;
+        }
+    </style>
+</head>
+
+<body>
+
+<input data-tooltip-click="Clicked" type="button" data-tooltip-click-hide-trigger="mouseout" value="Click to show, mouseout to hide"/>
+<input data-tooltip-click="Clicked" type="button" value="Click to show tooltip"/>
+
+<!-- JointJS/Rappid dependencies: -->
+<script src="../../../js/lib/jquery.min.js"></script>
+<script src="../../../js/lib/lodash.min.js"></script>
+<script src="../../../js/lib/backbone.min.js"></script>
+
+<script src="../../../js/lib/rappid.min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        new joint.ui.Tooltip({
+            target: '[data-tooltip-click]',
+            dataAttributePrefix: 'tooltip-click',
+            position: 'left',
+            padding: 20,
+            trigger: 'click'
+        });
+    })
+</script>
+
+</body>
+</html>

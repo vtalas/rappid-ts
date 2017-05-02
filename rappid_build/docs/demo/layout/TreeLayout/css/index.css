@@ -1,0 +1,6 @@
+.joint-link .link-tools {
+    display: none;
+}
+.joint-link {
+    pointer-events: none;
+}

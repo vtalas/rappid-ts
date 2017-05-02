@@ -1,0 +1,8 @@
+#paper .snapline.horizontal {
+    border-bottom: 2px dashed red;
+    box-shadow: 0 0 2px black;
+}
+#paper .snapline.vertical {
+    border-right: 2px dotted blue;
+    box-shadow: 0 0 2px black;
+}

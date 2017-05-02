@@ -1,0 +1,15 @@
+{
+	"name": "rappid-docs",
+	"version": "2.0.1",
+	"description": "Rappid API documentation",
+	"main": "index.html",
+	"scripts": {
+		"start": "node node_modules/live-server/live-server.js .. --open=docs/ --cors"
+	},
+	"author": "client IO",
+	"license": "http://jointjs.com/license/rappid",
+	"private": true,
+	"devDependencies": {
+		"live-server": "1.1.0"
+	}
+}

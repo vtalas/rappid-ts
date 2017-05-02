@@ -1,0 +1,15 @@
+label {
+    display: inline-block; 
+    cursor: pointer;
+    line-height: 50px;
+    vertical-align: middle;
+    margin: 20px;
+}
+.vertical-line {
+    height: 50px;
+    line-height: 50px;
+    width: 1px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: middle;
+}

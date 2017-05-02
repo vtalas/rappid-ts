@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/api.css">
+    <title>Rappid - alg</title>
+</head>
+<body data-name="alg">
+
+<div class="docs-main">
+    <nav class="docs-nav">
+        <input class="docs-nav-search" type="text" placeholder="i.e. scroller">
+        <img class="docs-nav-search-clear" src="./images/clear.png" title="Clear Search">
+            <ul class="docs-nav-items">
+                <li class="docs-nav-item" data-name="index">
+                </li>
+                <li class="docs-nav-item open" data-name="alg">
+                    <a class="docs-nav-item-link" href="alg.html">alg</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="alg.Dijkstra">
+                                    <a class="docs-nav-item-link" href="alg.html#alg.Dijkstra">Dijkstra</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="alg.PriorityQueue">
+                                    <a class="docs-nav-item-link" href="alg.html#alg.PriorityQueue">PriorityQueue</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="com">
+                    <a class="docs-nav-item-link" href="com.html">com</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="com.Channel">
+                                    <a class="docs-nav-item-link" href="com.html#com.Channel">Channel</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="dia">
+                    <a class="docs-nav-item-link" href="dia.html">dia</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="dia.CommandManager">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.CommandManager">CommandManager</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="dia.GraphUtils">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.GraphUtils">GraphUtils</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="dia.Validator">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.Validator">Validator</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="format">
+                    <a class="docs-nav-item-link" href="format.html">format</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="format.GEXF">
+                                    <a class="docs-nav-item-link" href="format.html#format.GEXF">GEXF</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.Print">
+                                    <a class="docs-nav-item-link" href="format.html#format.Print">Print</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.Raster">
+                                    <a class="docs-nav-item-link" href="format.html#format.Raster">Raster</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.SVG">
+                                    <a class="docs-nav-item-link" href="format.html#format.SVG">SVG</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="layout">
+                    <a class="docs-nav-item-link" href="layout.html">layout</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="layout.ForceDirected">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.ForceDirected">ForceDirected</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="layout.GridLayout">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.GridLayout">GridLayout</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="layout.TreeLayout">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.TreeLayout">TreeLayout</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="shapes">
+                    <a class="docs-nav-item-link" href="shapes.html">shapes</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="shapes.bpmn">
+                                    <a class="docs-nav-item-link" href="shapes.html#shapes.bpmn">bpmn</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="shapes.chart">
+                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart">chart</a>
+                                            <ul class="docs-nav-items">
+                                                <li class="docs-nav-item" data-name="shapes.chart.knob">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.knob">knob</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.matrix">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.matrix">matrix</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.pie">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.pie">pie</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.plot">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.plot">plot</a>
+                                                </li>
+                                            </ul>        </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="storage">
+                    <a class="docs-nav-item-link" href="storage.html">storage</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="storage.Local">
+                                    <a class="docs-nav-item-link" href="storage.html#storage.Local">Local</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="ui">
+                    <a class="docs-nav-item-link" href="ui.html">ui</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="ui.intro">
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Clipboard">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Clipboard">Clipboard</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.ColorPalette">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.ColorPalette">ColorPalette</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.ContextToolbar">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.ContextToolbar">ContextToolbar</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Dialog">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Dialog">Dialog</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.FlashMessage">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.FlashMessage">FlashMessage</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.FreeTransform">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.FreeTransform">FreeTransform</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Halo">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Halo">Halo</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Inspector">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Inspector">Inspector</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Keyboard">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Keyboard">Keyboard</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Lightbox">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Lightbox">Lightbox</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Navigator">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Navigator">Navigator</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.PaperScroller">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.PaperScroller">PaperScroller</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Popup">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Popup">Popup</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.SelectBox">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.SelectBox">SelectBox</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.SelectButtonGroup">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.SelectButtonGroup">SelectButtonGroup</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Selection">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Selection">Selection</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Snaplines">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Snaplines">Snaplines</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Stencil">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Stencil">Stencil</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.TextEditor">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.TextEditor">TextEditor</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Toolbar">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Toolbar">Toolbar</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Tooltip">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Tooltip">Tooltip</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.TreeLayoutView">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.TreeLayoutView">TreeLayoutView</a>
+                                </li>
+                            </ul>        </li>
+            </ul>    </nav>
+    <section class="docs-content">
+        <h1 class="docs-header">Rappid - alg</h1>
+        
+        <div class="docs-items">
+            
+    <div id="alg" class="docs-item">
+    <div id="alg.Dijkstra" class="docs-item">
+        <a href="#alg.Dijkstra" class="docs-item-anchor">
+            <h3 class="docs-item-header">alg.Dijkstra</h3>
+        </a>
+        <div class="docs-item-content">
+<p><code class="highlighted">alg<span class="token punctuation">.</span>Dijkstra</code> is an implementation of the <a href="http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra&apos;s <b>shortest path</b> algorithm</a>.
+  It can efficiently find the shortest path in both directed and undirected graphs. This implementation
+  uses <a href="#alg.PriorityQueue">a binary heap based priority queue</a>. The <b>time complexity</b> of this algorithm is <b><code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span><span class="token operator">|</span>E<span class="token operator">|</span> <span class="token operator">+</span> <span class="token operator">|</span>V<span class="token operator">|</span> log <span class="token operator">|</span>V<span class="token operator">|</span><span class="token punctuation">)</span></code></b>,
+  where <code class="highlighted"><span class="token operator">|</span>E<span class="token operator">|</span></code> is the number of edges in the graph and <code class="highlighted"><span class="token operator">|</span>V<span class="token operator">|</span></code> is the number of nodes.
+</p>
+
+<h3 id="alg.Dijkstra.install">Install</h3>
+
+<p>Include both <code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>dijkstra<span class="token punctuation">.</span>js</code> and its <a href="#alg.PriorityQueue">priority queue</a> dependency files into your HTML:</p>
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.alg.priorityQueue.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.alg.dijkstra.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<h3 id="alg.Dijkstra.usage">Usage</h3>
+
+<p>Even though <code class="highlighted">alg<span class="token punctuation">.</span>Dijkstra</code> is listed as a separate plugin, you usually don&apos;t 
+  use it directly. Instead, you can use the <a href="dia.html#dia.GraphUtils"><code class="highlighted">dia<span class="token punctuation">.</span>GraphUtils</code></a> plugin
+  which extends the <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</code> with a convenience method for finding the shortest path between two nodes
+  <code class="highlighted"><span class="token function">shortestPath</span><span class="token punctuation">(</span>source<span class="token punctuation">,</span> target <span class="token punctuation">[</span><span class="token punctuation">,</span> opt<span class="token punctuation">]</span><span class="token punctuation">)</span></code>.
+  However, it could be useful to use <code class="highlighted">alg<span class="token punctuation">.</span>Dijkstra</code> directly in some situations. The reason is that
+  <code class="highlighted">alg<span class="token punctuation">.</span>Dijkstra</code> calculates not only the shortest path between two nodes but the shortest
+  path between a node and <i>all</i> the other nodes in the graph.
+</p>
+
+<p>
+  <code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>Dijkstra</code> is a function that takes a graph represented as
+  an <a href="http://en.wikipedia.org/wiki/Adjacency_list">adjacency list</a>, a source node and optionally a <code class="highlighted">weight</code> function.
+  The adjacency list is an object where a key is a node ID and value is an array or IDs of the neighbouring nodes of that node.
+  If you want to use <code class="highlighted">alg<span class="token punctuation">.</span>Dijkstra</code> directly on a JointJS graph, you first have to
+  convert the graph into the adjacency list. (This is what the <code class="highlighted"><span class="token function">shortestPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> method
+  from the <code class="highlighted">alg<span class="token punctuation">.</span>GraphUtils</code> plugin does for you internally.) <code class="highlighted">weight</code> function is
+  a function that takes two nodes and returns a distance between them. How you define distance
+  between two nodes is completely on you. By default, the distance is always <code class="highlighted"><span class="token number">1</span></code>. Only keep in
+  mind that the Dijkstra&apos;s algorithm requires the weight to be a positive integer.
+</p>
+
+<p>The function returns a special object that encodes the shortest paths between the node
+  provided and all the other nodes in the graph.</p> 
+
+<pre><code class="highlighted"><span class="token keyword">var</span> graph <span class="token operator">=</span> <span class="token punctuation">{</span>
+    a<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;b&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;c&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    b<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;d&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;e&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    c<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;f&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;g&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    f<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;b&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    e<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;c&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    h<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;f&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;g&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    i<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;h&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;d&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;g&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    j<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> previous <span class="token operator">=</span> joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span><span class="token function">Dijkstra</span><span class="token punctuation">(</span>graph<span class="token punctuation">,</span> <span class="token string">&apos;a&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// { b: &quot;a&quot;, c: &quot;a&quot;, e: &quot;b&quot;, f: &quot;c&quot; }</span></code></pre>
+
+<p>
+  The above example shows the result of the <code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>Dijkstra</code> function.
+  This special object allows us to get the shortest path to all the nodes in the graph
+  starting at node <code class="highlighted"><span class="token string">&apos;a&apos;</span></code>. For example, the shortest path to the node <code class="highlighted"><span class="token string">&apos;f&apos;</span></code>
+  is a path <code class="highlighted"><span class="token punctuation">[</span><span class="token string">&apos;a&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;c&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;f&apos;</span><span class="token punctuation">]</span></code>. How did we get there? You simply start from your
+  target node and keep asking the returned object node by node till you reach your source node.
+  In other words, we start by <code class="highlighted">previous<span class="token punctuation">[</span><span class="token string">&apos;f&apos;</span><span class="token punctuation">]</span></code> which gives us <code class="highlighted"><span class="token string">&apos;c&apos;</span></code> Then
+  we ask for <code class="highlighted">previous<span class="token punctuation">[</span><span class="token string">&apos;c&apos;</span><span class="token punctuation">]</span></code> which gives us <code class="highlighted"><span class="token string">&apos;a&apos;</span></code> and we&apos;re done since
+  we reached our source node.
+</p>
+
+<h3 id="alg.Dijkstra.api">API</h3>
+
+<table>
+    <tr>
+        <th>joint.alg.Dijkstra(adjacencyList, source [, weight])</th>
+        <td>Find the shortest path between the node <code class="highlighted">source</code> and all the
+          other nodes in the graph represented as <code class="highlighted">adjacencyList</code>. See the
+          <a href="#alg.Dijkstra.usage">Usage</a> section for more info. <code class="highlighted">weight</code>
+          can optionally contain a function that takes two nodes and returns the distance
+          between them. This function defaults to:
+          <code class="highlighted"><span class="token keyword">function</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span> <span class="token punctuation">}</span></code>
+        </td>
+    </tr>
+</table>
+
+        </div>
+    </div>
+    <div id="alg.PriorityQueue" class="docs-item">
+        <a href="#alg.PriorityQueue" class="docs-item-anchor">
+            <h3 class="docs-item-header">alg.PriorityQueue</h3>
+        </a>
+        <div class="docs-item-content">
+<p><code class="highlighted">alg<span class="token punctuation">.</span>PriorityQueue</code> is an implementation of the <a href="http://en.wikipedia.org/wiki/Priority_queue"><b>Priority Queue</b> abstract data type</a>.
+  It is like a normal stack or queue, but where each item has assigned a priority (a number). Items with
+  higher priority are served before items with lower priority. This implementation uses <a href="http://en.wikipedia.org/wiki/Binary_heap">binary heap</a> as
+  an internal representation of the queue. The time complexity of all the methods is as follows:</p>
+
+<ul>
+  <li><b><code class="highlighted">create</code></b>: <code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span></code></li>
+  <li><b><code class="highlighted">insert</code></b>: <code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span>log n<span class="token punctuation">)</span></code></li>
+  <li><b><code class="highlighted">peek</code></b>: <code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></code></li>
+  <li><b><code class="highlighted">peekPriority</code></b>: <code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></code></li>
+  <li><b><code class="highlighted">remove</code></b>: <code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span>log n<span class="token punctuation">)</span></code></li>
+  <li><b><code class="highlighted">isEmpty</code></b>: <code class="highlighted"><span class="token function">O</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span></code></li>
+</ul>
+
+<p>
+  <code class="highlighted">alg<span class="token punctuation">.</span>PriorityQueue</code> is used internally by the <a href="#alg.Dijkstra">alg.Dijkstra</a> algorithm for finding the
+  shortest path in a graph. It is however useful on its own, that&apos;s why it is listed as a separate plugin.
+</p>
+
+<h3 id="alg.PriorityQueue.install">Install</h3>
+
+<p>Include <code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>priorityQueue<span class="token punctuation">.</span>js</code> file into your HTML:</p>
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.alg.priorityQueue.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<h3 id="alg.PriorityQueue.usage">Usage</h3>
+
+<p>The usage of <code class="highlighted">alg<span class="token punctuation">.</span>PriorityQueue</code> is pretty simple. You just have to create
+  an object of the <code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>PriorityQueue</code> type. Then you can insert, remove or
+  retrieve elements from the queue similarly as you would do with a normal JavaScript array.
+</p>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> q <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>PriorityQueue</span><span class="token punctuation">;</span>    
+q<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&apos;one&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">&apos;three&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&apos;two&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+q<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// the first value is &apos;one&apos;</span>
+q<span class="token punctuation">.</span><span class="token function">peekPriority</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">// the first priority is 1</span>
+q<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// the first value was &apos;one&apos;</span>
+q<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// the second value was &apos;two&apos;</span>
+q<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// the third value was &apos;three&apos;</span>
+q<span class="token punctuation">.</span><span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// true</span></code></pre>
+
+<p>
+  Moreover, this implementation of the priority queue allows you to update priorities
+  of any item that you have inserted into the queue. This is also known as the
+  <q><code class="highlighted">decreaseKey</code></q> operation. For this to work, you have to
+  give each item you insert into the queue a unique ID. This is because in
+  JavaScript, objects do not have unique IDs by default. Therefore, there
+  is no way the <code class="highlighted">alg<span class="token punctuation">.</span>PriorityQueue</code> can know which item you&apos;d like to
+  update priority for. Here is an example of priority queue that uses the
+  <code class="highlighted"><span class="token function">updatePriority</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> operation:
+</p>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> q <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>PriorityQueue</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&apos;one&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;id1&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">&apos;three&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;id3&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&apos;two&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;id2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+q<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// the first value is &apos;one&apos;</span>
+q<span class="token punctuation">.</span><span class="token function">updatePriority</span><span class="token punctuation">(</span><span class="token string">&apos;id1&apos;</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// now the first value is &apos;two&apos;</span>
+q<span class="token punctuation">.</span><span class="token function">updatePriority</span><span class="token punctuation">(</span><span class="token string">&apos;id1&apos;</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+q<span class="token punctuation">.</span><span class="token function">peek</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// the first value &apos;one&apos; got again back to the top</span></code></pre>
+
+<h3 id="alg.PriorityQueue.api">API</h3>
+
+<table>
+    <tr>
+        <th>joint.alg.PriorityQueue([opt])</th>
+        <td>Create a priority queue object. If <code class="highlighted">opt<span class="token punctuation">.</span>data</code> array is passed,
+          it must be an array of items of the form <code class="highlighted"><span class="token punctuation">{</span> priority<span class="token punctuation">:</span> Number<span class="token punctuation">,</span> value<span class="token punctuation">:</span> Object <span class="token punctuation">}</span></code>.
+          In this case, the priority queue will be initialized with this array. It&apos;s like
+          calling <code class="highlighted"><span class="token function">insert</span><span class="token punctuation">(</span>priority<span class="token punctuation">,</span> value<span class="token punctuation">)</span></code> for each item of this array.
+          <code class="highlighted">opt<span class="token punctuation">.</span>comparator</code> can optionally be a function that will be used
+          to compare two priorities. The signature of this function is <code class="highlighted"><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span></code>.
+          The function should return a value less then <code class="highlighted"><span class="token number">0</span></code> if priority <code class="highlighted">a</code> is lower
+          than priority <code class="highlighted">b</code>, value equal to <code class="highlighted"><span class="token number">0</span></code> if the priorities are the same
+          and value bigger than <code class="highlighted"><span class="token number">0</span></code> if priority <code class="highlighted">a</code> is higher than priority <code class="highlighted">b</code>.
+          The comparator function defaults to: <code class="highlighted"><span class="token keyword">function</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> a <span class="token operator">-</span> b <span class="token punctuation">}</span></code>.
+          This function effectively allows you to use any object as a priority in which case
+          it is on you to tell the priority queue how to compare two priorities.
+        </td>
+    </tr>
+    <tr>
+        <th>isEmpty()</th>
+        <td>Return <code class="highlighted"><span class="token boolean">true</span></code> if the priority queue is empty, <code class="highlighted"><span class="token boolean">false</span></code> otherwise.
+        </td>
+    </tr>
+    <tr>
+        <th>insert(priority, value [, id])</th>
+        <td>Insert a <code class="highlighted">value</code> with <code class="highlighted">priority</code> to the queue. Optionally
+          pass a unique <code class="highlighted">id</code> of this item. Passing unique IDs for each item
+          you insert allows you to use the <code class="highlighted"><span class="token function">updatePriority</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> operation.
+          See the <a href="#alg.PriorityQueue.usage">Usage section for details.
+        </a></td>
+    </tr>
+    <tr>
+        <th>peek()</th>
+        <td>Return the value of an item with the highest priority.
+        </td>
+    </tr>
+    <tr>
+        <th>peekPriority()</th>
+        <td>Return the highest priority in the queue.
+        </td>
+    </tr>
+    <tr>
+        <th>remove()</th>
+        <td>Return the value of an item with the highest priority and remove the item from the queue.
+        </td>
+    </tr>
+    <tr>
+        <th>updatePriority(id, priority)</th>
+        <td>Update priority of an item identified by a unique <code class="highlighted">id</code>. You can
+          only use this operation if all the items you inserted to the queue had a unique
+          ID assigned. See the <a href="#alg.PriorityQueue.usage">Usage section for details.
+        </a></td>
+    </tr>
+</table>
+
+        </div>
+    </div>
+    </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/api.js"></script>
+
+</body>
+</html>

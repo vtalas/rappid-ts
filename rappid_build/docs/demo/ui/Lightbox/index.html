@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Rappid - Demo - ui.Lightbox</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/lib/rappid.min.css">
+    <style>
+        #lightbox-demo {
+            width: 720px;
+            overflow: hidden;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+        #lightbox-demo .image {
+            float: left;
+            background-color: black;
+            width: 200px;
+            height: 140px;
+            line-height: 140px;
+            text-align: center;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        #lightbox-demo img {
+            max-width: 90%;
+            max-height: 90%;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 5px solid black;
+        }
+        .wrap {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="lightbox-demo">
+        <div class="wrap">
+            <div class="image"><img src="images/amsterdam1.jpg" alt="Amsterdam" title="Amsterdam"></div>
+            <div class="image"><img src="images/prague1.jpg" alt="Prague" title="Prague"></div>
+            <div class="image"><img src="images/amsterdam2.jpg" alt="Amsterdam 2" title="Amsterdam 2"></div>
+            <div class="image"><img src="images/prague2.jpg" alt="Prague 2" title="Prague 2"></div>
+            <div class="image"><img src="images/amsterdam3.jpg" alt="Amsterdam 3" title="Amsterdam 3"></div>
+        </div>
+    </div>
+
+    <!-- JointJS/Rappid dependencies: -->
+    <script src="../../../js/lib/jquery.min.js"></script>
+    <script src="../../../js/lib/lodash.min.js"></script>
+    <script src="../../../js/lib/backbone.min.js"></script>
+
+    <script src="../../../js/lib/rappid.min.js"></script>
+
+    <script>
+        $('#lightbox-demo img').on('click', function() {
+            var lb = new joint.ui.Lightbox({
+                title: $(this).attr('title'),
+                image: $(this).attr('src')
+            }).open();
+        });
+    </script>
+
+</body>
+</html>

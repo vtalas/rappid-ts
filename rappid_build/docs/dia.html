@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/api.css">
+    <title>Rappid - dia</title>
+</head>
+<body data-name="dia">
+
+<div class="docs-main">
+    <nav class="docs-nav">
+        <input class="docs-nav-search" type="text" placeholder="i.e. scroller">
+        <img class="docs-nav-search-clear" src="./images/clear.png" title="Clear Search">
+            <ul class="docs-nav-items">
+                <li class="docs-nav-item" data-name="index">
+                </li>
+                <li class="docs-nav-item" data-name="alg">
+                    <a class="docs-nav-item-link" href="alg.html">alg</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="alg.Dijkstra">
+                                    <a class="docs-nav-item-link" href="alg.html#alg.Dijkstra">Dijkstra</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="alg.PriorityQueue">
+                                    <a class="docs-nav-item-link" href="alg.html#alg.PriorityQueue">PriorityQueue</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="com">
+                    <a class="docs-nav-item-link" href="com.html">com</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="com.Channel">
+                                    <a class="docs-nav-item-link" href="com.html#com.Channel">Channel</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item open" data-name="dia">
+                    <a class="docs-nav-item-link" href="dia.html">dia</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="dia.CommandManager">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.CommandManager">CommandManager</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="dia.GraphUtils">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.GraphUtils">GraphUtils</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="dia.Validator">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.Validator">Validator</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="format">
+                    <a class="docs-nav-item-link" href="format.html">format</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="format.GEXF">
+                                    <a class="docs-nav-item-link" href="format.html#format.GEXF">GEXF</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.Print">
+                                    <a class="docs-nav-item-link" href="format.html#format.Print">Print</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.Raster">
+                                    <a class="docs-nav-item-link" href="format.html#format.Raster">Raster</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.SVG">
+                                    <a class="docs-nav-item-link" href="format.html#format.SVG">SVG</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="layout">
+                    <a class="docs-nav-item-link" href="layout.html">layout</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="layout.ForceDirected">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.ForceDirected">ForceDirected</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="layout.GridLayout">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.GridLayout">GridLayout</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="layout.TreeLayout">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.TreeLayout">TreeLayout</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="shapes">
+                    <a class="docs-nav-item-link" href="shapes.html">shapes</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="shapes.bpmn">
+                                    <a class="docs-nav-item-link" href="shapes.html#shapes.bpmn">bpmn</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="shapes.chart">
+                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart">chart</a>
+                                            <ul class="docs-nav-items">
+                                                <li class="docs-nav-item" data-name="shapes.chart.knob">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.knob">knob</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.matrix">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.matrix">matrix</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.pie">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.pie">pie</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.plot">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.plot">plot</a>
+                                                </li>
+                                            </ul>        </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="storage">
+                    <a class="docs-nav-item-link" href="storage.html">storage</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="storage.Local">
+                                    <a class="docs-nav-item-link" href="storage.html#storage.Local">Local</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="ui">
+                    <a class="docs-nav-item-link" href="ui.html">ui</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="ui.intro">
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Clipboard">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Clipboard">Clipboard</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.ColorPalette">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.ColorPalette">ColorPalette</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.ContextToolbar">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.ContextToolbar">ContextToolbar</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Dialog">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Dialog">Dialog</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.FlashMessage">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.FlashMessage">FlashMessage</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.FreeTransform">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.FreeTransform">FreeTransform</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Halo">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Halo">Halo</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Inspector">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Inspector">Inspector</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Keyboard">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Keyboard">Keyboard</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Lightbox">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Lightbox">Lightbox</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Navigator">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Navigator">Navigator</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.PaperScroller">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.PaperScroller">PaperScroller</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Popup">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Popup">Popup</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.SelectBox">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.SelectBox">SelectBox</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.SelectButtonGroup">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.SelectButtonGroup">SelectButtonGroup</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Selection">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Selection">Selection</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Snaplines">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Snaplines">Snaplines</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Stencil">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Stencil">Stencil</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.TextEditor">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.TextEditor">TextEditor</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Toolbar">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Toolbar">Toolbar</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Tooltip">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Tooltip">Tooltip</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.TreeLayoutView">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.TreeLayoutView">TreeLayoutView</a>
+                                </li>
+                            </ul>        </li>
+            </ul>    </nav>
+    <section class="docs-content">
+        <h1 class="docs-header">Rappid - dia</h1>
+        
+        <div class="docs-items">
+            
+    <div id="dia" class="docs-item">
+    <div id="dia.CommandManager" class="docs-item">
+        <a href="#dia.CommandManager" class="docs-item-anchor">
+            <h3 class="docs-item-header">dia.CommandManager</h3>
+        </a>
+        <div class="docs-item-content">
+<p>CommandManager keeps track of graph changes and allows you to <b>travel the history</b> of those changes back and forth.
+    There is no limitation put into the number of levels one can <b>undo/redo</b>.
+</p>
+
+<h3 id="dia.CommandManager.installation">Installation</h3>
+
+<p>Include <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>command<span class="token punctuation">.</span>js</code> to your HTML:</p>
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.dia.command.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<h3 id="dia.CommandManager.creating">Creating CommandManager</h3>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> paper <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Paper</span><span class="token punctuation">(</span><span class="token punctuation">{</span> el<span class="token punctuation">:</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#paper&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> width<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span> model<span class="token punctuation">:</span> graph <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> commandManager <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager</span><span class="token punctuation">(</span><span class="token punctuation">{</span> graph<span class="token punctuation">:</span> graph <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#undo-button&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> commandManager<span class="token punctuation">.</span><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#redo-button&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> commandManager<span class="token punctuation">.</span><span class="token function">redo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<iframe src="about:blank" data-src="demo/dia/CommandManager/index.html" style="height: 403px;"></iframe>
+
+<h3 id="dia.CommandManager.how-does-it-work">How does CommandManager work?</h3>
+
+<p>CommandManager listens to graph changes and when any cell&apos;s attribute is changed it stores the difference (command).
+CommandManager stores every change made on graph&apos;s cells into <code class="highlighted">undoStack</code> and every reverted change into <code class="highlighted">redoStack</code>.
+It allows you to revert the changes stored in those stacks.</p>
+
+<h3 id="dia.CommandManager.api">CommandManager API</h3>
+
+<h3 id="dia.CommandManager.constructor">constructor</h3>
+
+<p>The <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager</code> constructor takes up to three parameters.</p>
+
+<h4>graph</h4>
+<p>Is the graph the CommandManager listens to.</p>
+
+<h4>cmdBeforeAdd</h4>
+<p>A function evaluated before any command is added. If the function returns <code class="highlighted"><span class="token boolean">false</span></code>, the command does not get stored.
+This way you can control which commands do not get registered for undo/redo.</p>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> commandManager <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    graph<span class="token punctuation">:</span> graph<span class="token punctuation">,</span>
+    cmdBeforeAdd<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>cmdName<span class="token punctuation">,</span> cell<span class="token punctuation">,</span> graph<span class="token punctuation">,</span> options<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        options <span class="token operator">=</span> options <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token operator">!</span>options<span class="token punctuation">.</span>ignoreCommandManager<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// ...</span>
+
+<span class="token comment" spellcheck="true">// Note that the last argument to set() is an options object that gets passed to the cmdBeforeAdd() function.</span>
+element<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span> foo<span class="token punctuation">:</span> <span class="token string">&apos;bar&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> ignoreCommandManager<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<h4>cmdNameRegex</h4>
+<p>A regular expression specifying what cell&apos;s attributes the CommandManager listens to. Default regex is <code class="highlighted"><span class="token regex">/^(?:add|remove|change:\w+)$/</span></code>.</p>
+
+
+<h4>revertOptionsList</h4>
+<p>An array of options property names that are meant to be passed in undo actions. It defaults to <code class="highlighted"><span class="token punctuation">[</span><span class="token string">&apos;propertyPath&apos;</span><span class="token punctuation">]</span></code>.</p>
+
+<pre><code class="highlighted">commandManager <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    revertOptionsList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;myOptionAttribute1&apos;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+element<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;attribute&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;value&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> myOptionAttribute1<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> myOptionAttribute2<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+commandManager<span class="token punctuation">.</span><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// -&gt; calls element.set(&apos;attribute&apos;, &apos;prevValue&apos;, { myOptionAttribute1: 5 });</span>
+</code></pre>
+
+<p>Alternatively the <code class="highlighted">revertOptionList</code> can be defined as a function.</p>
+<pre><code class="highlighted">revertOptionsList<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>attrValue<span class="token punctuation">,</span> attrName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> attrName <span class="token operator">!==</span> <span class="token string">&apos;doNotPassMe&apos;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* pass over everything except `doNotPassMe` attribute */</span>
+<span class="token punctuation">}</span></code></pre>
+
+<h4>applyOptionsList</h4>
+<p>An array of options property names that are meant to be passed in redo actions. It defaults to <code class="highlighted"><span class="token punctuation">[</span><span class="token string">&apos;propertyPath&apos;</span><span class="token punctuation">]</span></code>.</p>
+
+<pre><code class="highlighted">commandManager <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    applyOptionsList<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;myOptionAttribute1&apos;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+element<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;attribute&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;value&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> myOptionAttribute1<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> myOptionAttribute2<span class="token punctuation">:</span> <span class="token number">6</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+commandManager<span class="token punctuation">.</span><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+commandManager<span class="token punctuation">.</span><span class="token function">redo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// -&gt; calls element.set(&apos;attribute&apos;, &apos;value&apos;, { myOptionAttribute1: 5 });</span>
+</code></pre>
+
+<p>Alternatively the <code class="highlighted">applyOptionList</code> can be defined as a function.</p>
+<pre><code class="highlighted">applyOptionsList<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>attrValue<span class="token punctuation">,</span> attrName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> attrName <span class="token operator">!==</span> <span class="token string">&apos;doNotPassMe&apos;</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/* pass over everything except `doNotPassMe` attribute */</span>
+<span class="token punctuation">}</span></code></pre>
+
+<h3 id="dia.CommandManager.undo">undo</h3><p>Function <code class="highlighted"><span class="token function">undo</span><span class="token punctuation">(</span>opt<span class="token punctuation">)</span></code> travels the history one command back. It accepts an option parameter (<code class="highlighted">opt</code>) that is applied when function makes changes to the graph. e.g <code class="highlighted">commandManager<span class="token punctuation">.</span><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">{</span> undoneBy<span class="token punctuation">:</span> <span class="token string">&apos;user123&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code></p>
+
+<h3 id="dia.CommandManager.redo">redo</h3><p>Function <code class="highlighted"><span class="token function">redo</span><span class="token punctuation">(</span>opt<span class="token punctuation">)</span></code> go back to whatever was previously <code class="highlighted"><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>ed.</p>
+<h3 id="dia.CommandManager.cancel">cancel</h3><p>Function <code class="highlighted"><span class="token function">cancel</span><span class="token punctuation">(</span>opt<span class="token punctuation">)</span></code> same as <code class="highlighted"><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> but does not store the undo-ed command to the redoStack. Canceled command therefore cannot be redo-ed.</p>
+<h3 id="dia.CommandManager.hasUndo">hasUndo</h3><p>Function <code class="highlighted"><span class="token function">hasUndo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> <code class="highlighted"><span class="token boolean">true</span></code> if there is something in the undoStack.</p>
+<h3 id="dia.CommandManager.hasRedo">hasRedo</h3><p>Function <code class="highlighted"><span class="token function">redoUndo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> <code class="highlighted"><span class="token boolean">true</span></code> if there is something in the redoStack</p>
+<h3 id="dia.CommandManager.reset">reset</h3><p>Function <code class="highlighted"><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> clears both undoStack and redoStack.</p>
+<h3 id="dia.CommandManager.initBatchCommand">initBatchCommand</h3>
+<p>Function <code class="highlighted"><span class="token function">initBatchCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> gives you the ability to gather multiple changes into a single command.
+These commands could be revert with single <code class="highlighted"><span class="token function">undo</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> call.</p>
+<p>From the moment the function is called every change made on graph is not stored into the undoStack. Changes are temporarily kept in the CommandManager until <code class="highlighted"><span class="token function">storeBatchCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> is called.</p>
+<h3 id="dia.CommandManager.storeBatchCommand">storeBatchCommand</h3>
+<p>Calling function <code class="highlighted"><span class="token function">storeBatchCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> tells the CommandManager to store all changes temporarily kept in the undoStack. In order to store changes you have to call this function as many times as <code class="highlighted"><span class="token function">initBatchCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> had been called.</p>
+
+        </div>
+    </div>
+    <div id="dia.GraphUtils" class="docs-item">
+        <a href="#dia.GraphUtils" class="docs-item-anchor">
+            <h3 class="docs-item-header">dia.GraphUtils</h3>
+        </a>
+        <div class="docs-item-content">
+<p>dia.GraphUtils adds additional methods to the <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</code>. Currently, 
+it adds only two methods: <code class="highlighted"><span class="token function">constructTree</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> and <code class="highlighted"><span class="token function">shortestpath</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>.</p>
+
+<h3 id="dia.GraphUtils.installation">Installation</h3>
+
+<p>Include <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>graphUtils<span class="token punctuation">.</span>js</code> file to your HTML:</p>
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.dia.graphUtils.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<p>If you plan to use <code class="highlighted"><span class="token function">shortestPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> method, you&apos;re going to also need to include
+  <a href="alg.html#alg.PriorityQueue"><code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>priorityQueue<span class="token punctuation">.</span>js</code></a> and <a href="alg.html#alg.Dijkstra"><code class="highlighted">joint<span class="token punctuation">.</span>alg<span class="token punctuation">.</span>dijkstra<span class="token punctuation">.</span>js</code></a> plugins:</p>
+
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.alg.priorityQueue.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.alg.dijkstra.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<p>This will add more methods to the <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</code> object:</p>
+
+<h3 id="dia.GraphUtils.methods">Methods</h3>
+
+<table>
+    <tr>
+        <th>constructTree(parent, opt, parentElement)</th>
+        <td><p>Construct a tree from a JSON object (<code class="highlighted">parent</code>, i.e. the top level node). This method returns
+	  an array of cells (elements and links) that constitute the tree. The <code class="highlighted">parent</code>
+	  parameter must be a JSON of the form:</p>
+	  <pre><code class="highlighted"><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">&apos;my label&apos;</span><span class="token punctuation">,</span> 
+  children<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;my label 2&apos;</span><span class="token punctuation">,</span> children<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span> 
+<span class="token punctuation">}</span>
+	</code></pre>
+	  <p><code class="highlighted">opt<span class="token punctuation">.</span>children</code> is the property specifying the children array (default is <code class="highlighted"><span class="token string">&apos;children&apos;</span></code>).
+	  If <code class="highlighted">opt<span class="token punctuation">.</span>children</code> is a function, it will be called with the current node as an argument and must return an
+	  array of its child nodes.
+	  <code class="highlighted">opt<span class="token punctuation">.</span><span class="token function">makeElement</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> is a function that is passed the current tree node and returns a JointJS element for it.
+	  <code class="highlighted">opt<span class="token punctuation">.</span><span class="token function">makeLink</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> is a function that is passed a parent and child nodes and returns a JointJS link for the edge.
+	  Example:</p>
+	  <pre><code class="highlighted"><span class="token keyword">var</span> cells <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">constructTree</span><span class="token punctuation">(</span>
+    <span class="token punctuation">{</span> 
+        name<span class="token punctuation">:</span> &apos;my top<span class="token punctuation">,</span> 
+        children<span class="token punctuation">:</span> <span class="token punctuation">[</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;my child 1&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> name<span class="token punctuation">:</span> <span class="token string">&apos;my child 2&apos;</span> <span class="token punctuation">}</span> <span class="token punctuation">]</span> 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    makeElement<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>node<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>basic<span class="token punctuation">.</span>Rect</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+		size<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">30</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+		attrs<span class="token punctuation">:</span> <span class="token punctuation">{</span> text<span class="token punctuation">:</span> <span class="token punctuation">{</span> text<span class="token punctuation">:</span> node<span class="token punctuation">.</span>name <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    makeLink<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>parentElement<span class="token punctuation">,</span> childElement<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Link</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+		source<span class="token punctuation">:</span> <span class="token punctuation">{</span> id<span class="token punctuation">:</span> parentElement<span class="token punctuation">.</span>id <span class="token punctuation">}</span><span class="token punctuation">,</span>
+		target<span class="token punctuation">:</span> <span class="token punctuation">{</span> id<span class="token punctuation">:</span> childElement<span class="token punctuation">.</span>id <span class="token punctuation">}</span>
+	    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+graph<span class="token punctuation">.</span><span class="token function">addCells</span><span class="token punctuation">(</span>cells<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	</code></pre>
+	  <p>This method is used in the <a href="/demos/javascript-ast">JavaScript AST visualizer demo</a>.</p>
+        </td>
+    </tr>
+    <tr>
+        <th>shortestPath(source, target [, opt])</th>
+        <td>Return an array of IDs of nodes on the shortest path between <code class="highlighted">source</code> and <code class="highlighted">target</code>.
+          <code class="highlighted">source</code> and <code class="highlighted">target</code> can either be elements or IDs of elements.
+          <code class="highlighted">opt<span class="token punctuation">.</span>weight</code> is an optional function returning a distance between two nodes.
+          It defaults to <code class="highlighted"><span class="token keyword">function</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token number">1</span> <span class="token punctuation">}</span></code>.
+          If <code class="highlighted">opt<span class="token punctuation">.</span>directed</code> is <code class="highlighted"><span class="token boolean">true</span></code>, the algorithm will take link direction into account.
+          The implementation uses the <a href="alg.html#alg.Dijkstra">joint.alg.Dijkstra</a> plugin internally. Please
+          refer to the plugin documentation for more information.
+        </td>
+    </tr>
+</table>
+
+        </div>
+    </div>
+    <div id="dia.Validator" class="docs-item">
+        <a href="#dia.Validator" class="docs-item-anchor">
+            <h3 class="docs-item-header">dia.Validator</h3>
+        </a>
+        <div class="docs-item-content">
+<p>Validator runs a set of callbacks to determine if a command is valid. This is useful
+for checking if a certain action in your application does lead to an invalid state of the diagram 
+(from your application specific perspective). You can not only cancel such command but
+e.g. also give the user a hint that this action is not allowed).</p>
+
+<h3 id="dia.Validator.installation">Installation</h3>
+
+<p>Include <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>command<span class="token punctuation">.</span>js</code> and <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>validator<span class="token punctuation">.</span>js</code> to your HTML:</p>
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.dia.command.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.dia.vaidator.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+
+<h3 id="dia.Validator.creating">Creating Validator</h3>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> graph <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> paper <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Paper</span><span class="token punctuation">(</span><span class="token punctuation">{</span> el<span class="token punctuation">:</span> <span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&apos;#paper&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span> width<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span> model<span class="token punctuation">:</span> graph <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">var</span> commandManager <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager</span><span class="token punctuation">(</span><span class="token punctuation">{</span> graph<span class="token punctuation">:</span> graph <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> validator <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Validator</span><span class="token punctuation">(</span><span class="token punctuation">{</span> commandManager<span class="token punctuation">:</span> commandManager <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+validator<span class="token punctuation">.</span><span class="token function">validate</span><span class="token punctuation">(</span><span class="token string">&apos;remove&apos;</span><span class="token punctuation">,</span> 
+    <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> command<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>command<span class="token punctuation">.</span>data<span class="token punctuation">.</span>type <span class="token operator">===</span> <span class="token string">&apos;basic.Rect&apos;</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token string">&apos;Rectangles cannot be removed.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> 
+    <span class="token keyword">function</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> command<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">next</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>(Those that know the great <a href="http://expressjs.com">ExpressJS</a> application framework might have
+recognized a similar API to what ExpressJS provides for registering URL route handlers.)</p>
+
+<iframe src="about:blank" data-src="demo/dia/Validator/index.html" style="height: 340px;"></iframe>
+
+<h3 id="dia.Validator.api">Validator API</h3> 
+
+<h3 id="dia.Validator.constructor">constructor</h3>
+
+<p>The <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Validator</code> constructor takes two parameters.</p> 
+
+<h4>commandManager</h4>
+<p>The CommandManager the validator listens to.</p>
+
+<h4>cancelInvalid</h4>
+<p>Determine whether to cancel an invalid command or not. If set to <code class="highlighted"><span class="token boolean">false</span></code>, only the <code class="highlighted">invalid</code> event is triggered.</p>
+<p>Default is <code class="highlighted"><span class="token boolean">true</span></code>.</p>
+
+<h3 id="dia.Validator.validate">validate</h3>
+
+<p>Function <code class="highlighted"><span class="token function">validate</span><span class="token punctuation">(</span>action <span class="token punctuation">[</span><span class="token punctuation">,</span> callback<span class="token punctuation">]</span><span class="token operator">*</span><span class="token punctuation">)</span></code> registers callbacks for a given action.</p>
+
+<p> The validator listens on commands added to the CommandManager and runs this set of callbacks registered for the <code class="highlighted">action</code>.
+If the last callback returns an error the command is canceled (see <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>CommandManager<span class="token punctuation">.</span><span class="token function">cancel</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>). 
+This behaviour can be suppressed by setting the <code class="highlighted">cancelInvalid</code> to <code class="highlighted"><span class="token boolean">false</span></code> in options passed to the Validator constructor.</p>
+
+<h4>action</h4>
+Action is the name of the event triggered on the graph (see <a href="/docs/JointJS#dia.Graph.events">List of triggered events</a>). 
+Multiple actions may be given separated by whitespaces.
+
+<pre><code class="highlighted"><span class="token function">validate</span><span class="token punctuation">(</span><span class="token string">&quot;change:source change:target&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<h4>callback</h4>
+<pre><code class="highlighted"><span class="token function">callback</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> command<span class="token punctuation">,</span> next<span class="token punctuation">)</span></code></pre>
+
+<p>The validation function. An arbitrary number of validation functions can be passed to <code class="highlighted"><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code>. Every callback has the following signature:</p>
+
+<p>Where <code class="highlighted">err</code> is an error from the previous callback.</p>
+<p>The <code class="highlighted">command</code> parameter is a record from the CommandManager stack. It holds information about an action in the graph.</p>
+<p>See below for the structure of a <code class="highlighted">command</code>. This command says that a <code class="highlighted">basic<span class="token punctuation">.</span>Rect</code> element has been moved by 50px down.</p>
+<pre><code class="highlighted"><span class="token punctuation">{</span>
+  <span class="token string">&quot;action&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;change:position&quot;</span>
+  <span class="token string">&quot;data&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;e0552cf2-fb05-4444-a9eb-3636a4589d64&quot;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// id of the cell it was manipulated with</span>
+    <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;basic.Rect&quot;</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// type of the cell</span>
+
+    <span class="token comment" spellcheck="true">// change:attribute events have always these two attributes filled</span>
+    <span class="token string">&quot;previous&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;position&quot;</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">&quot;x&quot;</span><span class="token punctuation">:</span><span class="token number">50</span><span class="token punctuation">,</span><span class="token string">&quot;y&quot;</span><span class="token punctuation">:</span><span class="token number">50</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;next&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token string">&quot;position&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">&quot;x&quot;</span><span class="token punctuation">:</span><span class="token number">50</span><span class="token punctuation">,</span><span class="token string">&quot;y&quot;</span><span class="token punctuation">:</span><span class="token number">100</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;batch&quot;</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// is command part of a batch command?</span>
+  <span class="token string">&quot;options&quot;</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token comment" spellcheck="true">// Backbone options that are passed through the listeners when passed as the last argument to the Backbone Model set() method.</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>The <code class="highlighted">add</code> and <code class="highlighted">remove</code> actions have <code class="highlighted">previous</code> and <code class="highlighted">next</code> object empty. They hold all the 
+cell attributes in the <code class="highlighted">attributes</code> object so that the CommandManager is able to reconstruct the whole cell if it has to. 
+See below for an example of such a command structure:</p>
+
+<pre><code class="highlighted"><span class="token punctuation">{</span>
+  <span class="token string">&quot;action&quot;</span><span class="token punctuation">:</span> <span class="token string">&quot;add&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;data&quot;</span> <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;id&quot;</span> <span class="token punctuation">:</span> <span class="token string">&quot;28de715b-62a7-4130-a729-1bcf7dbb1f2b&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;basic.Circle&quot;</span><span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true">//empty attributes</span>
+    <span class="token string">&quot;previous&quot;</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;next&quot;</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment" spellcheck="true">// all cells attributes</span>
+    <span class="token string">&quot;attributes&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;type&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;basic.Circle&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;size&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;width&quot;</span><span class="token punctuation">:</span><span class="token number">50</span><span class="token punctuation">,</span>
+       <span class="token string">&quot;height&quot;</span><span class="token punctuation">:</span><span class="token number">30</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;position&quot;</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">&quot;x&quot;</span><span class="token punctuation">:</span><span class="token number">1220</span><span class="token punctuation">,</span><span class="token string">&quot;y&quot;</span><span class="token punctuation">:</span><span class="token number">680</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;id&quot;</span><span class="token punctuation">:</span><span class="token string">&quot;28de715b-62a7-4130-a729-1bcf7dbb1f2b&quot;</span><span class="token punctuation">,</span>
+     <span class="token string">&quot;attrs&quot;</span> <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+       <span class="token string">&quot;circle&quot;</span> <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+         <span class="token string">&quot;width&quot;</span><span class="token punctuation">:</span><span class="token number">50</span><span class="token punctuation">,</span>
+         <span class="token string">&quot;height&quot;</span><span class="token punctuation">:</span><span class="token number">30</span>
+       <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+  <span class="token string">&quot;batch&quot;</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;options&quot;</span> <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;add&quot;</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;merge&quot;</span><span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;remove&quot;</span><span class="token punctuation">:</span><span class="token boolean">false</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+
+<p>The <code class="highlighted">next</code> parameter is a function accepting one argument - an error passed to the next callback in a row.</p>
+Calling <code class="highlighted"><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> function means going to the next callback in the order passed to the <code class="highlighted"><span class="token function">validate</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> method. 
+If a call to the <code class="highlighted"><span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> function is omitted, the validation for the specified action stops.<p></p>
+
+
+        </div>
+    </div>
+    </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/api.js"></script>
+
+</body>
+</html>

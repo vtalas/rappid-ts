@@ -1,0 +1,17 @@
+#navigator {
+    float: left;
+    margin-top: 55px;
+    margin-right: 30px;
+}
+#navigator .joint-navigator {
+    overflow: visible;
+}
+.joint-paper-scroller {
+    background-color: #e6e6e6;
+}
+.joint-paper-scroller .joint-paper {
+    background-color: white;
+}
+#paper {
+    margin-bottom: 70px;
+}

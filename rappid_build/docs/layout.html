@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/prism.css">
+    <link rel="stylesheet" type="text/css" href="css/api.css">
+    <title>Rappid - layout</title>
+</head>
+<body data-name="layout">
+
+<div class="docs-main">
+    <nav class="docs-nav">
+        <input class="docs-nav-search" type="text" placeholder="i.e. scroller">
+        <img class="docs-nav-search-clear" src="./images/clear.png" title="Clear Search">
+            <ul class="docs-nav-items">
+                <li class="docs-nav-item" data-name="index">
+                </li>
+                <li class="docs-nav-item" data-name="alg">
+                    <a class="docs-nav-item-link" href="alg.html">alg</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="alg.Dijkstra">
+                                    <a class="docs-nav-item-link" href="alg.html#alg.Dijkstra">Dijkstra</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="alg.PriorityQueue">
+                                    <a class="docs-nav-item-link" href="alg.html#alg.PriorityQueue">PriorityQueue</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="com">
+                    <a class="docs-nav-item-link" href="com.html">com</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="com.Channel">
+                                    <a class="docs-nav-item-link" href="com.html#com.Channel">Channel</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="dia">
+                    <a class="docs-nav-item-link" href="dia.html">dia</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="dia.CommandManager">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.CommandManager">CommandManager</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="dia.GraphUtils">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.GraphUtils">GraphUtils</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="dia.Validator">
+                                    <a class="docs-nav-item-link" href="dia.html#dia.Validator">Validator</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="format">
+                    <a class="docs-nav-item-link" href="format.html">format</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="format.GEXF">
+                                    <a class="docs-nav-item-link" href="format.html#format.GEXF">GEXF</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.Print">
+                                    <a class="docs-nav-item-link" href="format.html#format.Print">Print</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.Raster">
+                                    <a class="docs-nav-item-link" href="format.html#format.Raster">Raster</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="format.SVG">
+                                    <a class="docs-nav-item-link" href="format.html#format.SVG">SVG</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item open" data-name="layout">
+                    <a class="docs-nav-item-link" href="layout.html">layout</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="layout.ForceDirected">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.ForceDirected">ForceDirected</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="layout.GridLayout">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.GridLayout">GridLayout</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="layout.TreeLayout">
+                                    <a class="docs-nav-item-link" href="layout.html#layout.TreeLayout">TreeLayout</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="shapes">
+                    <a class="docs-nav-item-link" href="shapes.html">shapes</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="shapes.bpmn">
+                                    <a class="docs-nav-item-link" href="shapes.html#shapes.bpmn">bpmn</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="shapes.chart">
+                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart">chart</a>
+                                            <ul class="docs-nav-items">
+                                                <li class="docs-nav-item" data-name="shapes.chart.knob">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.knob">knob</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.matrix">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.matrix">matrix</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.pie">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.pie">pie</a>
+                                                </li>
+                                                <li class="docs-nav-item" data-name="shapes.chart.plot">
+                                                    <a class="docs-nav-item-link" href="shapes.html#shapes.chart.plot">plot</a>
+                                                </li>
+                                            </ul>        </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="storage">
+                    <a class="docs-nav-item-link" href="storage.html">storage</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="storage.Local">
+                                    <a class="docs-nav-item-link" href="storage.html#storage.Local">Local</a>
+                                </li>
+                            </ul>        </li>
+                <li class="docs-nav-item" data-name="ui">
+                    <a class="docs-nav-item-link" href="ui.html">ui</a>
+                            <ul class="docs-nav-items">
+                                <li class="docs-nav-item" data-name="ui.intro">
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Clipboard">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Clipboard">Clipboard</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.ColorPalette">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.ColorPalette">ColorPalette</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.ContextToolbar">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.ContextToolbar">ContextToolbar</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Dialog">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Dialog">Dialog</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.FlashMessage">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.FlashMessage">FlashMessage</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.FreeTransform">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.FreeTransform">FreeTransform</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Halo">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Halo">Halo</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Inspector">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Inspector">Inspector</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Keyboard">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Keyboard">Keyboard</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Lightbox">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Lightbox">Lightbox</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Navigator">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Navigator">Navigator</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.PaperScroller">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.PaperScroller">PaperScroller</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Popup">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Popup">Popup</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.SelectBox">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.SelectBox">SelectBox</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.SelectButtonGroup">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.SelectButtonGroup">SelectButtonGroup</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Selection">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Selection">Selection</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Snaplines">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Snaplines">Snaplines</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Stencil">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Stencil">Stencil</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.TextEditor">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.TextEditor">TextEditor</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Toolbar">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Toolbar">Toolbar</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.Tooltip">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.Tooltip">Tooltip</a>
+                                </li>
+                                <li class="docs-nav-item" data-name="ui.TreeLayoutView">
+                                    <a class="docs-nav-item-link" href="ui.html#ui.TreeLayoutView">TreeLayoutView</a>
+                                </li>
+                            </ul>        </li>
+            </ul>    </nav>
+    <section class="docs-content">
+        <h1 class="docs-header">Rappid - layout</h1>
+        
+        <div class="docs-items">
+            
+    <div id="layout" class="docs-item">
+    <div id="layout.ForceDirected" class="docs-item">
+        <a href="#layout.ForceDirected" class="docs-item-anchor">
+            <h3 class="docs-item-header">layout.ForceDirected</h3>
+        </a>
+        <div class="docs-item-content">
+<p>ForceDirected plugin implements automatic layouts for graphs using a <a target="_blank" href="http://en.wikipedia.org/wiki/Force-directed_graph_drawing">force-directed approach</a>. 
+This is useful for, usually larger, undirected graphs.</p>
+
+<h3 id="layout.ForceDirected.installation">Installation</h3>
+
+<p>Include the <code class="highlighted">joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>ForceDirected<span class="token punctuation">.</span>js</code> file into your HTML:</p>
+
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.layout.ForceDirected.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<h3 id="layout.ForceDirected.usage">Usage</h3>
+
+<p>ForceDirected layout plugin auto-layouts graphs based on three forces: repulsive force (forces nodes to move out of each other), attractive force (tries to get nodes together like a spring) and a gravity force (tendency of the nodes to move to a certain point).</p>
+
+<p>The <code class="highlighted">ForceDirected</code> constructor accepts a couple of parameters for configuring the layout.
+The <code class="highlighted">gravityCenter</code> parameter is the point the nodes tend to move to. 
+This is usually set to the center of the area where the nodes are to be laid out.
+<code class="highlighted">charge</code> parameter affects the repulsive force. Bigger the parameter is, bigger the repulsive force.
+<code class="highlighted">linkDistance</code> and <code class="highlighted">linkStrength</code> both affect the attractive force 
+(you can think of it as parameters of a spring that tights together two nodes). 
+Bigger the <code class="highlighted">linkStrength</code>, bigger the attractive force between two connected nodes. 
+On the other hand, smaller the <code class="highlighted">linkDistance</code>, shorter links you allow and so the attractive force is bigger between two connected nodes.</p>
+<p>
+There is no one-fits-all set of parameters that would give great result for all possible graphs. 
+Therefore, it is suggested that you to play with the parameters, try to set different values so that it gives a good result for your use case.
+</p>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> graphLayout <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>ForceDirected</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    graph<span class="token punctuation">:</span> graph<span class="token punctuation">,</span>
+    width<span class="token punctuation">:</span> <span class="token number">600</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span>
+    gravityCenter<span class="token punctuation">:</span> <span class="token punctuation">{</span> x<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span> y<span class="token punctuation">:</span> <span class="token number">200</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    charge<span class="token punctuation">:</span> <span class="token number">180</span><span class="token punctuation">,</span>
+    linkDistance<span class="token punctuation">:</span> <span class="token number">30</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graphLayout<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+_<span class="token punctuation">.</span><span class="token function">each</span><span class="token punctuation">(</span>_<span class="token punctuation">.</span><span class="token function">range</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> graphLayout<span class="token punctuation">.</span><span class="token function">step</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<p>Note: It is recommended to use the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame">requestAnimationFrame</a>
+    for stepping the layout.</p>
+
+<iframe src="about:blank" data-src="demo/layout/ForceDirected/index.html" style="height: 325px;"></iframe>
+
+        </div>
+    </div>
+    <div id="layout.GridLayout" class="docs-item">
+        <a href="#layout.GridLayout" class="docs-item-anchor">
+            <h3 class="docs-item-header">layout.GridLayout</h3>
+        </a>
+        <div class="docs-item-content">
+<p>GridLayout implements automatic layouts for graphs. This is useful in many scenarios, one of
+them being e.g. automatically positioning elements in <a href="ui.html#ui.Stencil">Stencil</a>.</p>
+
+<h3 id="layout.GridLayout.installation">Installation</h3>
+
+<p>Include the <code class="highlighted">joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>GridLayout<span class="token punctuation">.</span>js</code> file into your HTML:</p>
+
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.layout.GridLayout.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<h3 id="layout.GridLayout.usage">Usage</h3>
+
+<p>GridLayout plugin exposes one function <code class="highlighted">joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>GridLayout<span class="token punctuation">.</span><span class="token function">layout</span><span class="token punctuation">(</span>graphOrElements<span class="token punctuation">,</span> options<span class="token punctuation">)</span></code>.
+    The first parameter <code class="highlighted">graphOrElements</code> is the <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</code> or an array of <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Elements</code> we want to layout. The second parameter <code class="highlighted">options</code> is an
+    object that contains various options for configuring the layout.
+</p>
+
+<pre><code class="highlighted">graph<span class="token punctuation">.</span><span class="token function">addCells</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>basic<span class="token punctuation">.</span>Rect</span><span class="token punctuation">(</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>basic<span class="token punctuation">.</span>Rect</span><span class="token punctuation">(</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>basic<span class="token punctuation">.</span>Circle</span><span class="token punctuation">(</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>basic<span class="token punctuation">.</span>Circle</span><span class="token punctuation">(</span><span class="token punctuation">{</span> size<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">50</span> <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Layout the entire graph</span>
+joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>GridLayout<span class="token punctuation">.</span><span class="token function">layout</span><span class="token punctuation">(</span>graph<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  columns<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  columnWidth<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+  rowHeight<span class="token punctuation">:</span> <span class="token number">70</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Layout the circles with minimal resulting `y` coordinate equals 100.</span>
+<span class="token keyword">var</span> circles <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getElements</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>el<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> el <span class="token keyword">instanceof</span> <span class="token class-name">joint<span class="token punctuation">.</span>shapes<span class="token punctuation">.</span>basic<span class="token punctuation">.</span>Circle</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>GridLayout<span class="token punctuation">.</span><span class="token function">layout</span><span class="token punctuation">(</span>circles<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    columns<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    marginY<span class="token punctuation">:</span> <span class="token number">100</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+
+
+<p>Here are the options for configuring the GridLayout:</p>
+
+<ul>
+  <li><b><code class="highlighted">columns</code></b> - Number of columns. It defaults to <code class="highlighted"><span class="token number">1</span></code>.</li>
+  <li><b><code class="highlighted">columnWidth</code></b> - Width of a column. It defaults to a width of the widest element.</li>
+  <li><b><code class="highlighted">rowHeight</code></b> - Height of a row. It defaults to a height of the highest element.</li>
+  <li><b><code class="highlighted">dx</code></b> - Shifts the elements horizontally by a given amount. It defaults to <code class="highlighted"><span class="token number">0</span></code>.</li>
+  <li><b><code class="highlighted">dy</code></b> - Shifts the elements vertically by a given amount. It defaults to <code class="highlighted"><span class="token number">0</span></code>.</li>
+  <li><b><code class="highlighted">centre</code></b> - Positions the elements in the centre of a grid cell. It defaults to <code class="highlighted"><span class="token boolean">true</span></code>.</li>
+  <li><b><code class="highlighted">resizeToFit</code></b> - Resizes the elements to fit a grid cell, preserving the aspect ratio (default: <code class="highlighted"><span class="token boolean">false</span></code>)</li>
+  <li><b><code class="highlighted">marginX</code></b> - Sets the origin (<code class="highlighted">x</code> coordinate) of the most top-left element. It defaults to <code class="highlighted"><span class="token number">0</span></code>.</li>
+  <li><b><code class="highlighted">marginY</code></b> - Sets the origin (<code class="highlighted">y</code> coordinate) of the most top-left element. It defaults to <code class="highlighted"><span class="token number">0</span></code>.</li>
+</ul>
+
+<iframe src="about:blank" data-src="demo/layout/GridLayout/index.html" style="height: 325px;"></iframe>
+
+        </div>
+    </div>
+    <div id="layout.TreeLayout" class="docs-item">
+        <a href="#layout.TreeLayout" class="docs-item-anchor">
+            <h3 class="docs-item-header">layout.TreeLayout</h3>
+        </a>
+        <div class="docs-item-content">
+<p><code class="highlighted">layout<span class="token punctuation">.</span>TreeLayout</code> is a layout algorithm for <b>tree-like graphs</b>. It&apos;s great for displaying
+  org charts, mind maps, class hierarchies and other tree structures. The <code class="highlighted">layout<span class="token punctuation">.</span>TreeLayout</code> is strong
+  in combination with the <a href="ui.html#ui.TreeLayoutView">ui.TreeLayoutView</a> which implements drag&amp;drop
+  functionality useful when editing a tree structure.</p>
+
+<h3 id="layout.TreeLayout.installation">Installation</h3>
+
+<p>Include <code class="highlighted">joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>treeLayout<span class="token punctuation">.</span>js</code> file to your HTML:</p>
+
+<pre><code data-lang="html" class="highlighted"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>joint.layout.treeLayout.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+<h3 id="layout.TreeLayout.usage">Usage</h3>
+
+<p>Create an object of <code class="highlighted">layout<span class="token punctuation">.</span>TreeLayout</code> type passing your graph (object of type <code class="highlighted">joint<span class="token punctuation">.</span>dia<span class="token punctuation">.</span>Graph</code>) as a parameter.
+  Then you can just call the <code class="highlighted"><span class="token function">layout</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> method and the graph will be automatically laid out. It&apos;s important to note that
+  the position of the root element of the tree will stay the same as it was before the layout. This
+  allows you to move the tree to a position you want or have your tree be laid out <q>around</q> the root.</p>
+
+<pre><code class="highlighted"><span class="token keyword">var</span> graphLayout <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">joint<span class="token punctuation">.</span>layout<span class="token punctuation">.</span>TreeLayout</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    graph<span class="token punctuation">:</span> graph<span class="token punctuation">,</span>
+    parentGap<span class="token punctuation">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    siblingGap<span class="token punctuation">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// Root element position stays the same after the layout.</span>
+<span class="token comment" spellcheck="true">// In this demo, we assume the root is the first element.</span>
+<span class="token keyword">var</span> root <span class="token operator">=</span> graph<span class="token punctuation">.</span><span class="token function">getElements</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">position</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+graphLayout<span class="token punctuation">.</span><span class="token function">layout</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+
+<iframe src="about:blank" data-src="demo/layout/TreeLayout/index.html" style="height: 325px;"></iframe>
+
+<h3 id="layout.TreeLayout.configuration">Configuration</h3>
+
+<p id="layout.TreeLayout.constructor-options">The following table lists options that you can pass to the <code class="highlighted">layout<span class="token punctuation">.</span>TreeLayout</code>
+  constructor function:</p>
+
+<table>
+    <tr>
+        <th>graph</th>
+        <td>The JointJS graph object on which you want to perform the layout.</td>
+    </tr>
+    <tr>
+        <th>parentGap</th>
+        <td>The distance between a parent element and its children. Defaults to <code class="highlighted"><span class="token number">20</span></code>.</td>
+    </tr>
+    <tr>
+        <th>siblingGap</th>
+        <td>The distance between siblings. Defaults to <code class="highlighted"><span class="token number">20</span></code>.</td>
+    </tr>
+    <tr>
+        <th>firstChildGap</th>
+        <td>The distance between the first sibling and its parent. It&apos;s applicable only for diagonal layouts (<code class="highlighted"><span class="token string">&apos;TL&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;TR&apos;</span></code>,<code class="highlighted"><span class="token string">&apos;BL&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;BR&apos;</span></code>). It defaults to <code class="highlighted"><span class="token number">20</span></code>.
+        </td>
+    </tr>
+    <tr>
+        <th>direction</th>
+        <td>The default direction of the layout. It can be set to one of the following values: <code class="highlighted"><span class="token string">&apos;L&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;R&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;T&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;B&apos;</span></code> (for left-to-right, right-to-left, top-to-bottom and bottom-to-top layouts) or diagonal variants <code class="highlighted"><span class="token string">&apos;TL&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;TR&apos;</span></code>,<code class="highlighted"><span class="token string">&apos;BL&apos;</span></code>, <code class="highlighted"><span class="token string">&apos;BR&apos;</span></code> (for top-left, top-right, bottom-left and bottom-right). It defaults to
+          <code class="highlighted"><span class="token string">&apos;R&apos;</span></code>.
+          <p>
+            The <code class="highlighted">direction</code> defines how an element connects its parent. For instance <code class="highlighted">element<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;direction&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;R&apos;</span><span class="token punctuation">)</span></code> will appear on the right side to the parent element. Note that, this option is only used for nodes that do not have a <code class="highlighted">direction</code> property explicitelly set.
+          </p>
+        </td>
+    </tr>
+    <tr>
+      <th>filter(children, parent, opt)</th>
+      <td>
+        <p>An arbitrary element or sub-tree can be skipped by the layout. By providing a filter function, one can control, which elements will be laid out and which not.</p><p>The filter function returns an array of elements to be laid out and runs for every single parent element in the graph.</p><p>
+        </p>Parameters:<ul><li><code class="highlighted">children</code> is an array of siblings</li><li><code class="highlighted">parent</code> is the parent of the <code class="highlighted">children</code> or <code class="highlighted"><span class="token keyword">null</span></code>, when <code class="highlighted">children</code> are roots</li><li><code class="highlighted">opt</code> is the option object passed to <code class="highlighted"><span class="token function">layout</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code> method when calling the layout.</li></ul>
+        <p></p>
+<pre><code class="highlighted"><span class="token comment" spellcheck="true">// e.g. a collapse branch is not visible in the paper but resides in the graph.</span>
+<span class="token keyword">function</span><span class="token punctuation">(</span>children<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> children<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>child<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> child<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">&apos;visible&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+        <p>No element is filtered out by default.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>updatePosition(element, position, opt)</th>
+      <td>A function responsible for setting the resulting position on the elements. It calls <code class="highlighted">element<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;position&apos;</span><span class="token punctuation">,</span> position<span class="token punctuation">,</span> opt<span class="token punctuation">)</span><span class="token punctuation">;</span></code> by default. It can be used for positioning the elements in an animated manner. For instance:
+<pre><code class="highlighted">element<span class="token punctuation">.</span><span class="token function">transition</span><span class="token punctuation">(</span><span class="token string">&apos;position&apos;</span><span class="token punctuation">,</span> position<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    delay<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+    valueFunction<span class="token punctuation">:</span> joint<span class="token punctuation">.</span>util<span class="token punctuation">.</span>interpolate<span class="token punctuation">.</span>object<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+      </td>
+    </tr>
+    <tr>
+      <th>updateVertices(link, vertices, opt)</th>
+      <td>A function responsible for setting the resulting vertices on the links. It calls <code class="highlighted">link<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">&apos;vertices&apos;</span><span class="token punctuation">,</span> vertices<span class="token punctuation">,</span> opt<span class="token punctuation">)</span><span class="token punctuation">;</span></code> by default. If the option is defined as <code class="highlighted"><span class="token keyword">null</span></code> no vertices will be set by the layout.</td>
+    </tr>
+    <tr>
+        <th>attributeNames</th>
+        <td>An object that maps <a href="#layout.TreeLayout.element-options">element attributes</a> accepted by the layout to user defined attribute names. Useful for resolving conflicts when an attribute is already in use by the application logic. e.g Setting <code class="highlighted"><span class="token punctuation">{</span> siblingRank<span class="token punctuation">:</span> <span class="token string">&apos;index&apos;</span> <span class="token punctuation">}</span></code> will make the layout look for the <code class="highlighted">index</code> attribute instead of <code class="highlighted">siblingRank</code> when trying to figure out the order of siblings.</td>
+    </tr>
+</table>
+
+<p id="layout.TreeLayout.element-options">The tree layout also reads some element properties allowing for a fine control of the layout engine.
+  These are:</p>
+
+<table>
+    <tr>
+        <th>direction</th>
+        <td><p>
+            The direction of the layout for this specific node. Note the tree layout can handle even mixed layout directions on a per-node basis.
+          </p>
+          <p>
+            See the globally defined <code class="highlighted">direction</code> in the TreeLayout constructor function <a href="#layout.TreeLayout.constructor-options">configuration</a>.
+          </p>
+        </td>
+    </tr>
+    <tr>
+        <th>siblingRank</th>
+        <td>The index of the element among its siblings.
+        </td>
+    </tr>
+    <tr>
+        <th>offset</th>
+        <td>The additinal distance from the parent (the real distance is a sum of <code class="highlighted">parentGap</code> - defined globally in the TreeLayout constructor function <a href="#layout.TreeLayout.constructor-options">configuration</a>. - and the <code class="highlighted">offset</code>).
+        </td>
+    </tr>
+    <tr>
+        <th>margin</th>
+        <td>Extends the area occupied by the element on both sibling sides.
+<pre><code class="highlighted">element<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    direction<span class="token punctuation">:</span> <span class="token string">&apos;R&apos;</span><span class="token punctuation">,</span>
+    size<span class="token punctuation">:</span> <span class="token punctuation">{</span> width<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">100</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    margin<span class="token punctuation">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// as the `element` siblings are located above and under the element,</span>
+<span class="token comment" spellcheck="true">// it will in fact occupied an area of { width: 100, height: 140 }</span></code></pre>
+    </td></tr>
+    <tr>
+        <th>prevSiblingGap</th>
+        <td>The additional gap next to the element sub-tree on the side of the previous sibling. The previous sibling is defined as the sibling with the closest smaller <code class="highlighted">siblingRank</code>.</td>
+    </tr>
+    <tr>
+        <th>nextSiblingGap</th>
+        <td>The additional gap next to the element sub-tree on the side of the next sibling. The next sibling is defined as the sibling with the closest larger <code class="highlighted">siblingRank</code>.</td>
+    </tr>
+</table>
+
+<h3 id="layout.TreeLayout.api">API</h3>
+
+<table>
+    <tr>
+        <th>layout([opt])</th>
+        <td>
+          <p>Layout the graph in a tree. It iterates over all graph sources (elements without a parent) and layout them as separate trees.</p>
+          <p>The option object <code class="highlighted">opt</code>, which will be passed down to all operations on the graph made by the layout call. e.g. <code class="highlighted">treeLayout<span class="token punctuation">.</span><span class="token function">layout</span><span class="token punctuation">(</span><span class="token punctuation">{</span> myFlag<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span></code> will internally set an element position as <code class="highlighted">element<span class="token punctuation">.</span><span class="token function">position</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> <span class="token punctuation">{</span> myFlag<span class="token punctuation">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code>.</p>
+        </td>
+    </tr>
+</table>
+
+        </div>
+    </div>
+    </div>
+        </div>
+    </section>
+</div>
+
+<script src="js/api.js"></script>
+
+</body>
+</html>

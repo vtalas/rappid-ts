@@ -1,0 +1,17 @@
+#paper {
+    position: relative;
+    left: 200px;
+    height: 300px;
+}
+#stencil-container {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+}
+.joint-stencil .joint-paper {
+    left: 0;
+}
+.joint-stencil .group .joint-elements {
+    margin-left: -10px;
+    background: transparent;
+}

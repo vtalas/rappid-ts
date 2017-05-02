@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Themes Demo for UI Plugins</title>
+    <link rel="stylesheet" type="text/css" href="../../../../css/lib/rappid.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body style="height: 760px;">
+
+    <div id="plugins" class="ui-tabs-vertical ui-helper-clearfix">
+        <ul class="ui-tabs-nav">
+        </ul>
+    </div>
+
+    <div id="theme-select">
+    </div>
+
+    <!-- JointJS/Rappid dependencies: -->
+    <script src="../../../../js/lib/jquery.min.js"></script>
+    <script src="../../../../js/lib/lodash.min.js"></script>
+    <script src="../../../../js/lib/backbone.min.js"></script>
+
+    <script src="../../../../js/lib/rappid.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <script type="text/html" id="template-plugin-demo">
+        <div id="<%= className %>" class="plugin <%= className %>">
+            <h2 class="plugin-name"><%= name %></h2>
+            <div class="plugin-demo"></div>
+        </div>
+    </script>
+
+    <script type="text/html" id="template-plugin-navigation">
+        <li class="nav-item"><a href="#<%= className %>"><%= name %></a></li>
+    </script>
+
+    <script type="text/html" id="template-plugin-subheader">
+        <div>
+            <h4 class="description"><%= description %></h4>
+            <div class="plugin-sub-demo"></div>
+        </div>
+    </script>
+
+    <script>
+
+        (function() {
+
+            'use strict';
+
+            var $plugins = $('#plugins');
+            var $pluginsNav = $('#plugins > ul');
+            var pluginDemoTemplate = joint.util.template($('#template-plugin-demo').html());
+            var pluginDemoNavTemplate = joint.util.template($('#template-plugin-navigation').html());
+            var pluginSubheader = joint.util.template($('#template-plugin-subheader').html());
+
+            window.addPluginDemo = function(name) {
+
+                var className = name.replace(/[ \.]/g, '-');
+                var $demo = $(pluginDemoTemplate({
+                    name: name,
+                    className: className
+                }));
+                var $inner = $demo.find('.plugin-demo');
+                var $els = _.rest(arguments);
+
+                _.each($els, function($el) {
+                    $inner.append($el);
+                });
+                $plugins.append($demo);
+                var $navigation = $(pluginDemoNavTemplate({
+                    name: name,
+                    className: className
+                }));
+                $pluginsNav.append($navigation);
+
+                return $inner;
+            };
+
+            window.addSubheader = function(description) {
+                var $demo = $(pluginSubheader({
+                    description: description
+                }));
+                var $inner = $demo.find('.plugin-sub-demo');
+                var $els = _.rest(arguments);
+
+                _.each($els, function($el) {
+                    $inner.append($el);
+                });
+                return $demo;
+            };
+
+        })();
+    </script>
+
+    <script src="joint.ui.ColorPalette.js"></script>
+    <script src="joint.ui.ContextToolbar.js"></script>
+    <script src="joint.ui.Toolbar.js"></script>
+    <script src="joint.ui.Dialog.js"></script>
+    <script src="joint.ui.FlashMessage.js"></script>
+    <script src="joint.ui.FreeTransform.js"></script>
+    <script src="joint.ui.Halo.js"></script>
+    <script src="joint.ui.Inspector.js"></script>
+    <script src="joint.ui.Lightbox.js"></script>
+    <script src="joint.ui.Navigator.js"></script>
+    <script src="joint.ui.PaperScroller.js"></script>
+    <script src="joint.ui.Popup.js"></script>
+    <script src="joint.ui.SelectBox.js"></script>
+    <script src="joint.ui.SelectButtonGroup.js"></script>
+    <script src="joint.ui.Selection.js"></script>
+    <script src="joint.ui.Snaplines.js"></script>
+    <script src="joint.ui.Stencil.js"></script>
+    <script src="joint.ui.TextEditor.js"></script>
+    <script src="joint.ui.Tooltip.js"></script>
+    <script src="joint.ui.TreeLayoutView.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Rappid - Demo - ui.Tooltip</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/lib/rappid.min.css">
+    <link rel="stylehseet" type="text/css" href="css/index.css">
+    <style type="text/css">
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 5px;
+        }
+
+        label, input {
+            display: inline-block;
+            margin: 50px 8px;
+        }
+
+        .viewport {
+            margin: 50px;
+            border: 10px solid #222138;
+            height: 100px;
+            position: relative;
+        }
+
+        .viewport > button {
+            margin: 0;
+        }
+
+        .viewport-tooltip-bottom {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 10px !important;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="viewport-tooltips">
+    <div class="viewport">
+        <button data-tooltip="tooltip text" data-tooltip-position="left">viewport</button>
+        <button class="viewport-tooltip-bottom" data-tooltip="tooltip text" data-tooltip-position="right">
+            viewport
+        </button>
+    </div>
+</div>
+
+<div class="without-viewport">
+    <div class="viewport" style="border-color: #fe854f">
+        <button data-tooltip="tooltip text" data-tooltip-position="left">without viewport</button>
+        <button class="viewport-tooltip-bottom" data-tooltip="tooltip text" data-tooltip-position="right">
+            without viewport
+        </button>
+    </div>
+</div>
+
+
+<!-- JointJS/Rappid dependencies: -->
+<script src="../../../js/lib/jquery.min.js"></script>
+<script src="../../../js/lib/lodash.min.js"></script>
+<script src="../../../js/lib/backbone.min.js"></script>
+
+<script src="../../../js/lib/rappid.min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+        var content = '<h4>HTML Tooltip</h4> <img src="./images/jointjs-logo.png" width="80" style="position: absolute; top: 10px; right: 10px;"/><hr/><b>JointJS</b> tooltips can contain arbitrary HTML.';
+
+        new joint.ui.Tooltip({
+            rootTarget: '.without-viewport',
+            target: '[data-tooltip]',
+            content: content
+        });
+
+        new joint.ui.Tooltip({
+            rootTarget: '.viewport-tooltips',
+            target: '[data-tooltip]',
+            viewport: { selector: '.viewport' },
+            content: content
+        });
+    })
+</script>
+
+</body>
+</html>
